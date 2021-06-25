@@ -26,3 +26,6 @@ Steps to compile the code
 5. A executable named embolism should now exist in the embolism directory. Finally, use the following command while in the embolism directory to submit the code to run on a Cooley node:
 `qsub -n 1 -t 10 -A <JOBNAME> ./embolism.sh`
 The parameters of this command can be different, see https://www.alcf.anl.gov/support-center/cooley/submitting-jobs-cooley
+
+# Embolims cmake command: 
+`cmake -C /home/abucaro/BloodFlow/sites/cooley.cmake ../ -DVTK_DIR="/soft/visualization/vtk-9.0.1/lib64/cmake/vtk-9.0/" -DCMAKE_CXX_STANDARD=11`
